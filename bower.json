@@ -1,0 +1,16 @@
+{
+  "name": "portfolio3",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "normalize-css": "normalize.css#^4.0.0",
+    "particles.js": "^2.0.0",
+    "animate.css": "^3.5.1",
+    "velocity": "^1.2.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
