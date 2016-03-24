@@ -11,12 +11,15 @@ $(".hamburger").hover(function() {
 });
 
 $(".triangle").click(function () {
-  $(this).addClass("animated flip").one(animationEnd, function(){
-    $(this).velocity("scroll", {duration: 3500, section: ".about_me", mobileHA: false})
-    .velocity({ opacity: 1 });
-    $(this).removeClass("animated flip");
+  $(this).addClass('animated slideOutUp').one(animationEnd, function () {
+    $(this).addClass("animated flip").one(animationEnd, function(){
+      $(this).velocity("scroll", {duration: 3500, section: ".about_me", mobileHA: false})
+      .velocity({ opacity: 1 });
+      $(this).removeClass("animated flip slideOutUp");
+    });
   });
 });
+
 
 // $(".triangle").click(function () {
 //   $(this).addClass("animated flip");
