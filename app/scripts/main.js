@@ -4,10 +4,17 @@ particlesJS.load('particles-js', '../bower_components/particles.js/demo/particle
   console.log('callback - particles.js config loaded');
 });
 
+$(".hamburger").hover(function() {
+  $(this).addClass('animated rubberBand').one(animationEnd, function() {
+    $(this).removeClass('animated rubberBand');
+  });
+});
+
 $(".triangle").click(function () {
   $(this).addClass("animated flip").one(animationEnd, function(){
     $(this).velocity("scroll", {duration: 3500, section: ".about_me", mobileHA: false})
     .velocity({ opacity: 1 });
+    $(this).removeClass("animated flip");
   });
 });
 
@@ -29,7 +36,8 @@ $('#e').animo({animation: "fadeOutLeft", duration: 0.7, keep: true}, function() 
 			$('#n').animo({animation: "fadeOutRight", duration: 0.7, keep: true}, function() {
 				$('#u').animo({animation: "fadeOutLeft", duration: 0.7, keep: true}, function() {
           $('#e2').animo({animation: "fadeOutUp", duration: 0.7, keep: true}, function() {
-            $('#l').animo({animation: "fadeOutDown", duration: 0.7, keep: true}, doMagicIn());
+            $('#l').animo({animation: "fadeOutDown", duration: 0.7, keep: true}, function() {
+            }, doMagicIn());
           });
         });  // function to fade them back in
 			});
