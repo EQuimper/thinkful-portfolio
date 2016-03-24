@@ -1,7 +1,7 @@
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 
-particlesJS.load('particles-js', '../bower_components/particles.js/demo/particles.json', function() {
+particlesJS.load('particles-js', '../particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
