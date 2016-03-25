@@ -1,8 +1,8 @@
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 
-particlesJS.load('particles-js', '../styles/particles.json', function() {
-  console.log('callback - particles.js config loaded');
+
+particlesJS.load('particles-js', '../particles.json', function() {
 });
 
 $(".hamburger").hover(function() {
@@ -14,7 +14,7 @@ $(".hamburger").hover(function() {
 $(".triangle").click(function () {
   $(this).addClass('animated slideOutUp').one(animationEnd, function () {
     $(this).addClass("animated flip").one(animationEnd, function(){
-      $(this).velocity("scroll", {duration: 3500, section: ".about_me", mobileHA: false})
+      $(this).velocity("scroll", {duration: 2500, section: ".about_me", mobileHA: false})
       .velocity({ opacity: 1 });
       $(this).removeClass("animated flip slideOutUp");
     });
