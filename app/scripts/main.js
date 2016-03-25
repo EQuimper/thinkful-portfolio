@@ -2,7 +2,7 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 
 
 
-particlesJS.load('particles-js', '../particles.json', function() {
+particlesJS.load('particles-js', 'particles.json', function() {
 });
 
 $(".hamburger").hover(function() {
