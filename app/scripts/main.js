@@ -1,7 +1,6 @@
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-particlesJS.load('particles-js', 'particles.json', function () {
-});
+particlesJS.load('particles-js', 'particles.json', function () {});
 
 $(".hamburger").hover(function () {
 	$(this).addClass('animated rubberBand').one(animationEnd, function () {
